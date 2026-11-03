@@ -16,23 +16,23 @@ draft: false
 
 ## Context
 
-At SOULAX, I designed the interface for an AI-driven trailer inventory product. The system supports teams managing large trailer inventories and tracking where trailers are in real time.
+At SOULAX, I designed the interface for an AI-driven trailer inventory product. It supports operations teams who need to locate trailers across yards, keep inventory current, and complete loading, unloading, and audit tasks from both desktop and mobile screens.
 
-## Problem
+## The challenge
 
-Finding and tracking trailers across a large inventory can require substantial manual searching. The product was intended to make inventory information easier to locate and manage.
+Trailer status changes throughout an operation. Teams need to distinguish available inventory from trailers that are loaded or in progress, find a unit by its ID or location, and understand where it was last recorded. On the floor, staff also need a practical way to identify a trailer and record pallet or load activity without returning to a desktop.
 
-## Role
+The product goal was to use AI-driven tracking to reduce the manual effort spent searching for trailers. That made findability and clear status especially important: a large inventory is only useful when people can quickly narrow it to the trailer they need.
 
-I worked as a Specialist UX Designer, designing the product interface for AI-driven trailer tracking and inventory management.
+## My role
 
-## Research
+As a Specialist UX Designer, I designed the product interface for trailer tracking and inventory management, covering the desktop dashboard and mobile operational flows.
 
-The resume summary does not document project-specific research methods or participant findings, so I have not attributed interviews, usability tests, or user quotes to this work.
+## Designing across desk and yard
 
-## Process
+The dashboard brings search, location selection, status filters, and a trailer list alongside a map. Each row gives the operator a quick scan of trailer ID, bill of lading, age or status, and last known location. This makes the list useful for both locating a specific unit and reviewing the state of a yard.
 
-The design challenge was to make a data-heavy operational workflow usable while supporting live inventory tracking. The available project material shows a dashboard, mobile task flows, trailer details, and location information.
+The mobile screens focus on the steps that happen away from a desk: entering or scanning a trailer ID, loading and unloading, capturing a bill of lading, reviewing a pallet list, and completing a manual trailer audit. Status labels and confirmation screens help make the current step explicit as a task moves forward.
 
 <ImageGrid
   columns={2}
@@ -40,31 +40,27 @@ The design challenge was to make a data-heavy operational workflow usable while 
     {
       src: "/casestudies/Trailer%20Inventory/Trailer%20Inventory%20Dashboard.png",
       alt: "Trailer inventory dashboard showing trailer records, load status, search, and a map",
-      caption: "The dashboard brings inventory records and trailer locations into one workspace.",
+      caption: "Search, status filters, inventory records, and a yard map share one desktop workspace.",
     },
     {
       src: "/casestudies/Trailer%20Inventory/TRL%20Details.png",
       alt: "Mobile trailer details with trailer information and a location map",
-      caption: "A trailer detail view combines identifying information with its location.",
+      caption: "A mobile trailer detail view keeps unit information and location close at hand.",
     },
   ]}
 />
 
-## Solution
-
-The interface supports real-time, AI-driven tracking and management of trailer inventory. The provided screens include desktop inventory monitoring and mobile workflows for trailer and pallet operations.
-
 <Figure
   src="/casestudies/Trailer%20Inventory/Pallet%20Load.png"
   alt="Mobile pallet-loading screen showing trailer identification and load information"
-  caption="A mobile screen from the trailer inventory workflow."
+  caption="A mobile loading flow connects trailer identification with pallet activity."
   size="large"
 />
 
-## Outcomes
+## Outcome
 
-The project goal was to reduce the time spent manually searching for trailers. The resume does not provide a measured reduction, so no numerical performance claim is made here.
+The design brings real-time, AI-driven trailer tracking together with the desktop search and mobile load, unload, and audit tasks needed to manage inventory. This supports the product goal of reducing the manual effort spent locating trailers.
 
 ## Reflection
 
-This project sits at the intersection of real-time operational data and everyday logistics work. The screens show the importance of making inventory status and location information accessible across desktop and mobile workflows.
+Inventory visibility has to travel with the work. The map helps teams understand where trailers are, while the mobile flows support the people capturing what happens to them next. Designing both views as parts of the same workflow keeps location and task status connected.

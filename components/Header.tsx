@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import Container from "@/components/Container";
 import ThemeToggle from "@/components/ThemeToggle";
 
 const navigation = [
@@ -78,7 +77,7 @@ export default function Header() {
         scrolled ? "border-border" : "border-transparent"
       }`}
     >
-      <Container className="relative">
+      <div className="relative w-full px-gutter">
         <div className="flex min-h-control items-center justify-between gap-wide py-tight">
           <Link
             href="/"
@@ -162,7 +161,7 @@ export default function Header() {
               </button>
             </nav>
         </div>
-      </Container>
+      </div>
     </header>
   );
 }

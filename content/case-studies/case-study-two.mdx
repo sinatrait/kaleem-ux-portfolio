@@ -16,23 +16,25 @@ draft: false
 
 ## Context
 
-At SOULAX, I designed UX for an AI quote-generation tool. The work focused on making a complex financial workflow more approachable for people who need to create quotes.
+At SOULAX, I designed UX for an AI-assisted quote-generation product. The workflow is built around a practical starting point for sales and operations teams: provide customer and request-for-quote details, or attach a CAD or specification file, then work with the generated quote and its underlying assumptions.
 
-## Problem
+## The challenge
 
-Quote generation can involve multiple variables and business rules. The challenge was to translate that complexity into a tool people can use to generate accurate quotes in seconds.
+A quote can depend on product dimensions, material and board grade, flute, colors, quantity breaks, delivery location, timing, plant, and freight. When these inputs are spread across messages and documents, it is difficult to see whether a proposed price reflects the right request.
 
-## Role
+The product goal was to help users generate accurate quotes in seconds. The interface therefore needed to make two things work together: the speed of an AI-assisted conversation and the care required to review a commercial proposal.
 
-I worked as a Specialist UX Designer, designing the user experience for the AI quote-generation workflow.
+## My role
 
-## Research
+As a Specialist UX Designer, I designed the experience for the AI quote-generation workflow, including request intake, quote review, and pricing explanation.
 
-The resume summary does not describe project-specific research methods or findings, so this case study does not claim interviews, usability tests, or participant feedback.
+## From request to review
 
-## Process
+The experience starts with a flexible prompt rather than a long form. A user can describe the request or upload CAD/RFQ material, then continue the conversation as the quote takes shape. Recent quotes and quick stats provide recognizable ways back into ongoing work.
 
-The available screens show a conversational starting point alongside quote specifications and pricing explanations. They illustrate how the experience brings user input, quote details, and AI-generated guidance together.
+Once a proposal is available, the screen gives its specifications a dedicated place: product, dimensions, board grade, flute, colors, quantity options, destination, and requested date. Keeping these details visible beside the assistant response makes it easier to check that the quote corresponds to the request.
+
+The pricing explanation adds context to the generated numbers. It shows the kinds of inputs behind a price—such as the paper index, make-ready and waste assumptions, freight lane, and contract tier—so the result is not just a figure in a chat bubble.
 
 <ImageGrid
   columns={2}
@@ -40,31 +42,27 @@ The available screens show a conversational starting point alongside quote speci
     {
       src: "/casestudies/Quote%20generation/Smurfit%20Westrock%20AI%20Assist.png",
       alt: "AI quote assistant with a message field for quote details or uploaded files",
-      caption: "A conversational entry point for starting a quote request.",
+      caption: "A flexible request starts with customer, RFQ, or uploaded specification details.",
     },
     {
       src: "/casestudies/Quote%20generation/Explain.png",
       alt: "AI quote assistant showing quote specifications and an explanation of proposed pricing",
-      caption: "The quote view surfaces specifications and explains pricing inputs.",
+      caption: "Specifications and pricing assumptions remain available for quote review.",
     },
   ]}
 />
 
-## Solution
-
-The designed experience simplifies multi-variable quote workflows through an AI-assisted tool. The screen set includes quote creation, specification review, and a pricing explanation.
-
 <Figure
   src="/casestudies/Quote%20generation/show.png"
   alt="AI quote assistant showing a generated quote conversation and customer account information"
-  caption="An example quote workflow with customer context and assistant interaction."
+  caption="The assistant presents a proposed quote alongside its product and order details."
   size="large"
 />
 
-## Outcomes
+## Outcome
 
-The stated product goal was to generate accurate quotes in seconds. The resume does not include measured accuracy or time results, so those outcomes are not quantified here.
+The design brings request intake, quote specifications, and explainable pricing into one workflow, supporting the product goal of generating accurate quotes in seconds while giving users a clear view of the details behind each proposal.
 
 ## Reflection
 
-This work focused on making a complicated financial workflow feel accessible without losing the underlying quote details. Clear specifications and explainable pricing are visible parts of the provided interface.
+AI can accelerate a quote, but it does not remove the need for a person to understand what is being proposed. Pairing the conversational assistant with structured specifications and a readable price explanation helps keep the generated result connected to the commercial details behind it.

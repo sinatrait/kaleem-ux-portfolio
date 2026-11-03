@@ -16,23 +16,27 @@ draft: false
 
 ## Context
 
-Rehrig Vision is represented in the supplied screens by VisionPulse, an operations platform for service providers. The work spans customer management, assets and locations, service-provider profiles, and configuration.
+VisionPulse brings day-to-day service operations into a single web platform. The work shown here covers several connected parts of that system: customer accounts, work orders, assets, service locations, provider profiles, and the settings that keep operational data consistent.
 
-## Problem
+## The challenge
 
-Operations teams need to move between related records and workflows, including customer accounts, assets, locations, and service-provider settings. The screens show these activities across multiple areas of the platform.
+An operations team may start with a customer question and need to check an account, its work orders, and the assets or locations attached to it. Those records are related, but each has its own fields and administrative actions. The experience needed to make it straightforward to find the right record, understand its current state, and continue with the relevant task.
 
-## Role
+The asset screens add another layer: teams work with serial numbers, service status, customer locations, products, and installation dates. Bulk import and configurable fields also have to fit into the same environment without obscuring routine search and review.
 
-This case study presents the UX and product-design work represented by the supplied Rehrig Vision screens. The provided materials do not specify project dates, team structure, or individual responsibilities beyond the portfolio context.
+## My role
 
-## Research
+I worked on the UX and product design for these service-provider workflows, shaping the account, asset, location, and profile experiences shown in the product screens.
 
-The supplied project folder contains product-interface screenshots, but no research notes or participant findings. This case study therefore focuses on the visible product workflows and does not claim unverified research methods or results.
+## Design focus
 
-## Process
+I treated record discovery and record management as related, but distinct, tasks. In the customer workspace, accounts, work orders, and assets are available as clear tabs, with search, filters, recent searches, and bulk upload close to the list they affect. This gives the workspace a consistent starting point whether someone is locating one record or adding a group of customers.
 
-The screenshots show operational views for customer accounts, service-provider profiles, assets, and locations. Together, they illustrate how the platform supports record lookup and administration across service operations.
+For assets, a structured table makes identifying information and operational state scannable together: asset name, serial number, status, customer location, product, and key dates. Location entry uses a dedicated form for address, provider, segment, routes, and related operational attributes, while shared picklists help keep repeated values organized.
+
+## Solution
+
+The resulting screens connect common service operations without collapsing every task into one oversized form. Customer search, asset review, location management, provider profiles, and configuration each have a recognizable home, while the shared navigation keeps them part of one platform.
 
 <ImageGrid
   columns={2}
@@ -40,38 +44,34 @@ The screenshots show operational views for customer accounts, service-provider p
     {
       src: "/casestudies/Rehrig%20vision/Manage%20Customers%20-%20Landing%20screen.png",
       alt: "Customer-management page with account and work-order tabs, search, and recent customer records",
-      caption: "Customer records can be searched and reviewed from a dedicated workspace.",
+      caption: "Accounts, work orders, and assets sit beside search, filters, and recent customer records.",
     },
     {
       src: "/casestudies/Rehrig%20vision/sp-registry-Profiles.png",
       alt: "Service-provider profile table with provider role, access level, and status columns",
-      caption: "The profile registry summarizes access and status for service-provider roles.",
+      caption: "The profile registry makes provider details and account status easier to scan.",
     },
   ]}
 />
 
-## Solution
-
-The platform brings service operations and configuration tools into a shared product experience. The supplied screens include customer search, asset and location records, service-provider profiles, and configurable picklists.
-
 <Figure
   src="/casestudies/Rehrig%20vision/Add%20Location.png"
   alt="Location form with service-provider, address, route, and asset information fields"
-  caption="A location form gathers operational, address, and service-provider details."
+  caption="A location form groups service, address, route, and asset details into one task."
   size="large"
 />
 
 <Figure
   src="/casestudies/Rehrig%20vision/pick-list/Picklist.png"
   alt="Configuration page showing shared picklists for country codes, state or province codes, and time zones"
-  caption="Shared picklists support consistent values across operational records."
+  caption="Shared picklists keep frequently used location values manageable."
   size="large"
 />
 
-## Outcomes
+## What the design supports
 
-The supplied material documents the product screens but does not include measured outcomes. No efficiency, adoption, or error-reduction claims are made here.
+The delivered interface covers the service-provider workspace from customer and asset lookup through location and profile administration. Search, table structure, status labels, and dedicated forms give each task a clear entry point, while shared navigation connects the work across the platform.
 
 ## Reflection
 
-The screen set highlights how a service-operations platform connects customer and asset data with administrative configuration. Further project context and validated outcomes can be added when those details are available.
+In an operations product, small data relationships carry real weight: an asset belongs somewhere, a location connects to a provider, and a customer record may sit beside its work orders. Making those relationships visible in the everyday interface is as important as making each individual screen easy to use.

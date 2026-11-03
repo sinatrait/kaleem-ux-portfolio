@@ -16,23 +16,25 @@ draft: false
 
 ## Context
 
-At SOULAX, I designed an interface for lien registration and search, supporting financial institutions through legally complex processes.
+At SOULAX, I designed an interface for lien registration and search used by financial institutions. The work addresses a document-heavy process where teams need to find records, review their status, and move requests toward a decision.
 
-## Problem
+## The challenge
 
-Lien workflows involve detailed information and consequential steps. The project aimed to make searches more efficient and less error-prone for the institutions using the system.
+A lien record can pass through several meaningful states: it may need an initial search, review, correction, approval, or a related waiver and payout request. A workflow that hides those distinctions makes it harder for staff to tell what needs attention and what action comes next.
 
-## Role
+Search also has to work with the identifiers and source material people have at hand. The screens support looking up records by VIN, entering one or multiple VINs, and uploading a registration document.
 
-I worked as a Specialist UX Designer, designing the user experience for lien registration and search.
+## My role
 
-## Research
+As a Specialist UX Designer, I designed the interface for lien registration and search, with a focus on bringing record discovery and status review into a coherent workflow.
 
-The resume summary does not include project-specific research methods or participant findings. This case study therefore avoids presenting unverified user quotes or research results.
+## Making status actionable
 
-## Process
+The summary dashboard separates work into columns such as “Lien Search To Do,” “Lien Summary To Review,” “Lien Summary To Correct,” “Lien Summary Approved,” and “Waiver & Payout Request.” This board-like structure gives each stage its own place, while the count above a column helps users see where records are grouped.
 
-The provided screens show lien summaries organized by workflow status, alongside VIN search and registration tasks. This interface structure makes the state of records and the next available actions visible.
+For a new search, the entry panel offers a choice between a single VIN and multiple VINs, plus registration-PDF upload or direct VIN entry. Once a record is in progress, the card surfaces key details—including VIN, bank, amounts, contact, and validity date—so a reviewer can scan the case without opening every item.
+
+Generated waiver documents continue that path from review to action: the document can be checked, edited, and downloaded from the workflow.
 
 <ImageGrid
   columns={2}
@@ -40,31 +42,27 @@ The provided screens show lien summaries organized by workflow status, alongside
     {
       src: "/casestudies/Registration-lien/Dashboard%20-%20Lien%20Summary.png",
       alt: "Lien summary dashboard with items grouped by review and approval status",
-      caption: "A dashboard organizes lien records by their workflow state.",
+      caption: "Separate workflow columns make pending review, correction, approval, and payout work visible.",
     },
     {
       src: "/casestudies/Registration-lien/New%20VIN%20search.png",
       alt: "New lien search panel offering single or multiple VIN entry and document upload",
-      caption: "A search flow supports VIN entry or registration-document upload.",
+      caption: "Search begins with either VIN entry or an uploaded registration document.",
     },
   ]}
 />
 
-## Solution
-
-The designed interface supports lien searches and registration workflows, with screens for reviewing lien summaries and generating related documents.
-
 <Figure
   src="/casestudies/Registration-lien/Generate%20waiver.png"
   alt="Lien application displaying a generated waiver document with edit and download actions"
-  caption="A generated waiver can be reviewed and downloaded from the workflow."
+  caption="A waiver document can be reviewed and prepared for download in context."
   size="large"
 />
 
-## Outcomes
+## Outcome
 
-The stated goal was to make lien searches more efficient and error-free. The resume does not provide measured efficiency or error-rate results, so no quantified outcome is claimed here.
+The design supports the goal of making lien searches more efficient and less error-prone by clarifying record status, offering practical search inputs, and keeping generated documents connected to the work.
 
 ## Reflection
 
-This work involved turning a legally complex process into a digital workflow. The available screens emphasize clear record status, search entry, and access to generated documents.
+For regulated or financially consequential work, clarity is not decoration. A visible status, a usable search path, and access to the relevant document help people understand the state of a case before they act on it.

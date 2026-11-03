@@ -13,10 +13,13 @@ Open [http://localhost:3000](http://localhost:3000) to view the site.
 
 ## Add a case study
 
-Each case study is one editable MDX file in `content/case-studies/`. Edit the
-frontmatter and body in `case-study-one.mdx`, `case-study-two.mdx`,
-`case-study-three.mdx`, `predictive-analytics.mdx`, or `rehrig-vision.mdx`, or
-add another file using this schema:
+Each case study is one editable MDX file in `content/case-studies/`. The
+portfolio includes projects from Abdul's resume and supplied UX portfolio PDF:
+Rehrig Vision, AI Quote Generation, Lien Registration and Search, Predictive
+Analytics, AI Trailer Inventory, Soulax branding, Svarupa, RFID warehouse
+operations, trailer inspection, service marketplace, Kyndryl Solution Library,
+ENPF Mobile App, Beatflow, and Actifio. Edit the matching `.mdx` file or add
+another file using this schema:
 
 ```md
 ---

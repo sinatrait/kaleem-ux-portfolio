@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Trailer Inventory System — Abdul Kaleem</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">AK</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-menu-btn" aria-label="Toggle menu"><span></span><span></span></button>
+  </nav>
+
+  <div class="cs-hero">
+    <div>
+      <a href="index.html" class="cs-back">← Back to Work</a>
+      <span class="cs-num">03</span>
+      <div style="display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap;">
+        <span class="tag">Real-time</span><span class="tag">Operations</span><span class="tag">Inventory</span><span class="tag">AI</span>
+      </div>
+      <h1 class="cs-heading reveal">AI Trailer Inventory System</h1>
+      <p class="cs-sub reveal" data-delay="100">Designing a real-time inventory management system that gives logistics operators full visibility and control over thousands of trailers across a distributed network — without the chaos.</p>
+    </div>
+    <div class="cs-meta-card reveal" data-delay="200">
+      <h4>Project Details</h4>
+      <div class="cs-meta-row">
+        <div class="cs-meta-item">
+          <label>Role</label>
+          <span>Principal UX Designer</span>
+        </div>
+        <div class="cs-meta-divider"></div>
+        <div class="cs-meta-item">
+          <label>Platform</label>
+          <span>Operations Web Platform</span>
+        </div>
+        <div class="cs-meta-divider"></div>
+        <div class="cs-meta-item">
+          <label>Focus</label>
+          <span>Real-time / Logistics / AI</span>
+        </div>
+        <div class="cs-meta-divider"></div>
+        <div class="cs-meta-item">
+          <label>Timeline</label>
+          <span>10 Months</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cs-hero-img reveal">
+    <div class="img-placeholder img-placeholder--dark">
+      <div class="placeholder-inner">
+        <span class="placeholder-icon">⬙</span>
+        <span class="placeholder-text">System — Full Interface Screenshot</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="cs-body">
+
+    <div class="cs-grid reveal">
+      <div class="cs-sidebar-label">Overview</div>
+      <div class="cs-content">
+        <h3>Project Overview</h3>
+        <p>One of the largest logistics operators in North America was managing a fleet of over 8,000 trailers across 120+ distribution sites — with no reliable, real-time view of where each trailer was, what condition it was in, or whether it was available for dispatch.</p>
+        <p>The company had invested in AI-powered sensor technology that could automatically detect trailer location, condition status, and utilization. The design challenge: how do you build an interface that makes this torrent of real-time data usable for operations managers whose priority is moving cargo — not interpreting dashboards?</p>
+        <div class="cs-quote">
+          <p>"We had the sensors. We had the data. What we didn't have was a way for our people to actually use it to make decisions."</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cs-grid reveal">
+      <div class="cs-sidebar-label">Problem</div>
+      <div class="cs-content">
+        <h3>The Problem Space</h3>
+        <p>The legacy system was a spreadsheet-based inventory tracker updated manually twice a day. With a fleet of this scale, the data was almost always outdated by the time it was used. Operations managers were making dispatch decisions based on information that could be 12+ hours old.</p>
+        <div class="cs-highlight-grid">
+          <div class="cs-highlight-item">
+            <h5>Stale, manual data</h5>
+            <p>Trailer status updated twice daily by hand. Location, condition, and availability were frequently inaccurate.</p>
+          </div>
+          <div class="cs-highlight-item">
+            <h5>No cross-site visibility</h5>
+            <p>Each site managed its own local spreadsheet — no aggregated view of fleet availability across the network.</p>
+          </div>
+          <div class="cs-highlight-item">
+            <h5>Reactive maintenance</h5>
+            <p>Without condition monitoring, maintenance was addressed only after failures — causing costly downtime and dispatch delays.</p>
+          </div>
+          <div class="cs-highlight-item">
+            <h5>Data volume overwhelm</h5>
+            <p>Sensor data arrived continuously, but there was no logic to prioritize what required action versus routine status updates.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cs-grid reveal">
+      <div class="cs-sidebar-label">UX Approach</div>
+      <div class="cs-content">
+        <h3>Research &amp; UX Approach</h3>
+        <p>I spent two weeks embedded with operations teams at two distribution sites, observing how dispatch decisions were actually made in the flow of a work shift. I also interviewed yard managers, fleet coordinators, and regional operations leads to understand the differences in how each role related to inventory data.</p>
+        <p>The core insight was role divergence: yard managers needed a granular, site-level view to coordinate day-to-day dispatch; regional coordinators needed a 30,000-foot view to balance utilization across sites. A single interface couldn't serve both — so I designed a role-adaptive system with shared data but distinct views.</p>
+        <div class="cs-img-block">
+          <div class="img-placeholder">
+            <div class="placeholder-inner">
+              <span class="placeholder-icon">◫</span>
+              <span class="placeholder-text">Role-based Mental Model Map</span>
+            </div>
+          </div>
+          <span class="cs-img-caption">Mental model mapping showing divergent needs across roles</span>
+        </div>
+        <div class="cs-highlight-grid">
+          <div class="cs-highlight-item">
+            <h5>Real-time over comprehensive</h5>
+            <p>Show the current moment clearly. Historical depth is secondary to operational immediacy.</p>
+          </div>
+          <div class="cs-highlight-item">
+            <h5>Exception-first design</h5>
+            <p>The system should surface what needs attention — not make users scan everything to find problems.</p>
+          </div>
+          <div class="cs-highlight-item">
+            <h5>Role-adaptive views</h5>
+            <p>Same data, different interfaces for site-level and network-level operators.</p>
+          </div>
+          <div class="cs-highlight-item">
+            <h5>Dispatch-native actions</h5>
+            <p>Inventory management actions should align with the actual language and workflow of dispatch operations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cs-grid reveal">
+      <div class="cs-sidebar-label">Design Process</div>
+      <div class="cs-content">
+        <h3>Design Process</h3>
+        <p>The design process was shaped heavily by the real-time data challenge. Early in discovery, I ran a data sprint with engineering and data science to understand what the sensor system could reliably provide — and at what latency. This determined the information architecture before a single wireframe was drawn.</p>
+        <div class="cs-img-block">
+          <div class="img-placeholder img-placeholder--alt">
+            <div class="placeholder-inner">
+              <span class="placeholder-icon">◧</span>
+              <span class="placeholder-text">Information Architecture Diagram</span>
+            </div>
+          </div>
+          <span class="cs-img-caption">Information architecture map showing data flows and view hierarchy</span>
+        </div>
+        <p>I prototyped the yard-level map view through four iterations, each tested with site managers in a lab setting. The key challenge was density: a 500-trailer yard needed to be navigable on a single screen without losing individual asset detail. The solution was a dynamic zoom model with cluster abstraction at low zoom and individual trailer cards at high zoom.</p>
+        <div class="cs-two-col">
+          <div class="cs-img-block">
+            <div class="img-placeholder">
+              <div class="placeholder-inner">
+                <span class="placeholder-icon">◩</span>
+                <span class="placeholder-text">Map View — Cluster Mode</span>
+              </div>
+            </div>
+            <span class="cs-img-caption">Network view: cluster abstraction at low zoom</span>
+          </div>
+          <div class="cs-img-block">
+            <div class="img-placeholder img-placeholder--dark">
+              <div class="placeholder-inner">
+                <span class="placeholder-icon">◪</span>
+                <span class="placeholder-text">Map View — Detail Mode</span>
+              </div>
+            </div>
+            <span class="cs-img-caption">Yard view: individual trailer detail at high zoom</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cs-grid reveal">
+      <div class="cs-sidebar-label">Key Decisions</div>
+      <div class="cs-content">
+        <h3>Key Design Decisions</h3>
+        <div class="cs-highlight-grid">
+          <div class="cs-highlight-item">
+            <h5>Dynamic map with live status</h5>
+            <p>Trailers are represented as live markers on a spatial map, colored by availability and condition status — immediately communicating what's dispatachable.</p>
+          </div>
+          <div class="cs-highlight-item">
+            <h5>AI-predictive maintenance alerts</h5>
+            <p>Instead of only flagging current failures, the AI surfaces trailers likely to need maintenance within 72 hours — enabling proactive scheduling.</p>
+          </div>
+          <div class="cs-highlight-item">
+            <h5>Site-vs-network toggle</h5>
+            <p>A persistent toggle switches between yard-level granularity and regional fleet view — same UI, different data scope.</p>
+          </div>
+          <div class="cs-highlight-item">
+            <h5>Dispatch integration</h5>
+            <p>Trailer assignment can be initiated directly from the inventory system, with a one-click handoff to the dispatch platform — eliminating a manual handoff step.</p>
+          </div>
+        </div>
+        <div class="cs-img-block" style="margin-top:32px">
+          <div class="img-placeholder img-placeholder--alt">
+            <div class="placeholder-inner">
+              <span class="placeholder-icon">⬙</span>
+              <span class="placeholder-text">Predictive Maintenance Alert Panel</span>
+            </div>
+          </div>
+          <span class="cs-img-caption">AI-predictive maintenance alert panel with condition timeline</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cs-grid reveal">
+      <div class="cs-sidebar-label">Solution</div>
+      <div class="cs-content">
+        <h3>Final Solution</h3>
+        <p>The final system delivers a live, role-adaptive view of the entire trailer fleet — updated every 60 seconds from sensor data. Operations managers at every level now have a single source of truth that reflects the actual state of their inventory, not yesterday's spreadsheet entry.</p>
+        <div class="cs-img-block">
+          <div class="img-placeholder">
+            <div class="placeholder-inner">
+              <span class="placeholder-icon">⬙</span>
+              <span class="placeholder-text">Final Design — Network View Dashboard</span>
+            </div>
+          </div>
+          <span class="cs-img-caption">Final design: regional network view with fleet utilization and alert summary</span>
+        </div>
+        <div class="cs-two-col">
+          <div class="cs-img-block">
+            <div class="img-placeholder img-placeholder--dark">
+              <div class="placeholder-inner">
+                <span class="placeholder-icon">◉</span>
+                <span class="placeholder-text">Yard-level Map View</span>
+              </div>
+            </div>
+            <span class="cs-img-caption">Yard-level map view with trailer status overlay</span>
+          </div>
+          <div class="cs-img-block">
+            <div class="img-placeholder img-placeholder--alt">
+              <div class="placeholder-inner">
+                <span class="placeholder-icon">◈</span>
+                <span class="placeholder-text">Trailer Detail Card</span>
+              </div>
+            </div>
+            <span class="cs-img-caption">Individual trailer detail with history and dispatch action</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="cs-impact">
+    <div class="cs-impact-inner">
+      <span class="mono section-label">Impact</span>
+      <h2>Real-time visibility.<br>Real operational gains.</h2>
+      <div class="impact-stats">
+        <div>
+          <span class="impact-stat-num">12hr→1min</span>
+          <span class="impact-stat-label">Data latency reduction from manual to real-time</span>
+        </div>
+        <div>
+          <span class="impact-stat-num">23%</span>
+          <span class="impact-stat-label">Improvement in fleet utilization within 6 months</span>
+        </div>
+        <div>
+          <span class="impact-stat-num">$2.4M</span>
+          <span class="impact-stat-label">Estimated annual savings from proactive maintenance</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cs-nav-footer">
+    <a href="case-study-2.html" class="cs-nav-link">
+      <span>← Previous</span>
+      <h4>AI Quote Generation Platform</h4>
+    </a>
+    <a href="about.html" class="cs-nav-link next">
+      <span>Learn More →</span>
+      <h4>About Abdul Kaleem</h4>
+    </a>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">Abdul Kaleem</span>
+      <span class="mono footer-tagline">Principal UX Designer</span>
+      <div class="footer-links">
+        <a href="index.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

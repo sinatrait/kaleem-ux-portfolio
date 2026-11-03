@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Inspection Dashboard — Abdul Kaleem</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">AK</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-menu-btn" aria-label="Toggle menu"><span></span><span></span></button>
+  </nav>
+
+  <!-- CS HERO -->
+  <div class="cs-hero">
+    <div>
+      <a href="index.html" class="cs-back">← Back to Work</a>
+      <span class="cs-num">01</span>
+      <div style="display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap;">
+        <span class="tag">AI</span><span class="tag">Dashboard</span><span class="tag">Analytics</span><span class="tag">Enterprise</span>
+      </div>
+      <h1 class="cs-heading reveal">AI Inspection Dashboard</h1>
+      <p class="cs-sub reveal" data-delay="100">Designing a monitoring dashboard that helps operations managers track AI-powered inspection results, surface anomalies, and act on insights — without needing to interpret raw model output.</p>
+    </div>
+    <div class="cs-meta-card reveal" data-delay="200">
+      <h4>Project Details</h4>
+      <div class="cs-meta-row">
+        <div class="cs-meta-item">
+          <label>Role</label>
+          <span>Principal UX Designer</span>
+        </div>
+        <div class="cs-meta-divider"></div>
+        <div class="cs-meta-item">
+          <label>Platform</label>
+          <span>Enterprise Web App</span>
+        </div>
+        <div class="cs-meta-divider"></div>
+        <div class="cs-meta-item">
+          <label>Focus</label>
+          <span>AI / Analytics / Operations</span>
+        </div>
+        <div class="cs-meta-divider"></div>
+        <div class="cs-meta-item">
+          <label>Timeline</label>
+          <span>6 Months</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO IMAGE -->
+  <div class="cs-hero-img reveal">
+    <div class="img-placeholder img-placeholder--alt">
+      <div class="placeholder-inner">
+        <span class="placeholder-icon">⬡</span>
+        <span class="placeholder-text">Dashboard — Full Interface Screenshot</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CASE STUDY BODY -->
+  <div class="cs-body">
+
+    <!-- OVERVIEW -->
+    <div class="cs-grid reveal">
+      <div class="cs-sidebar-label">Overview</div>
+      <div class="cs-content">
+        <h3>Project Overview</h3>
+        <p>A large industrial operator had deployed AI models to automate physical inspections across hundreds of assets. While the AI was performing well at the model level, the operations team had no effective way to monitor results, understand confidence levels, or identify when something required human review.</p>
+        <p>The challenge was not the AI itself — it was the gap between what the AI knew and what the human team needed to act on. I was brought in to design a monitoring and triage dashboard that would bridge this gap.</p>
+        <div class="cs-quote">
+          <p>"The AI was right 94% of the time. But managers had no way to know which 6% needed their attention."</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROBLEM -->
+    <div class="cs-grid reveal">
+      <div class="cs-sidebar-label">Problem</div>
+      <div class="cs-content">
+        <h3>The Problem Space</h3>
+        <p>Managers were receiving raw inspection logs — thousands of rows of data with confidence scores, asset IDs, timestamps, and anomaly flags. There was no prioritization, no visual hierarchy, and no clear path from "data" to "decision."</p>
+        <p>Key pain points identified through stakeholder interviews and contextual inquiry:</p>
+        <div class="cs-highlight-grid">
+          <div class="cs-highlight-item">
+            <h5>No anomaly prioritization</h5>
+            <p>All inspection results were presented with equal visual weight. Critical failures looked the same as routine passes.</p>
+          </div>
+          <div class="cs-highlight-item">
+            <h5>Confidence scores misunderstood</h5>
+            <p>Managers didn't know how to interpret AI confidence levels or when they should override a result.</p>
+          </div>
+          <div class="cs-highlight-item">
+            <h5>No cross-asset view</h5>
+            <p>Managers could only look at one asset at a time — impossible to spot patterns across sites.</p>
+          </div>
+          <div class="cs-highlight-item">
+            <h5>Slow review workflows</h5>
+            <p>Triaging results required switching between 4 different tools — email, spreadsheets, a legacy app, and the AI log viewer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- UX APPROACH -->
+    <div class="cs-grid reveal">
+      <div class="cs-sidebar-label">UX Approach</div>
+      <div class="cs-content">
+        <h3>Research &amp; UX Approach</h3>
+        <p>I led a two-week discovery sprint with operations managers, field inspectors, and data science leads. The goal was to map the current-state workflow, identify decision points, and understand what "good" looked like for each role.</p>
+        <p>The central insight: managers didn't need more data — they needed a clearer signal. The design challenge became one of information hierarchy and progressive disclosure, not feature richness.</p>
+        <div class="cs-img-block">
+          <div class="img-placeholder">
+            <div class="placeholder-inner">
+              <span class="placeholder-icon">◫</span>
+              <span class="placeholder-text">Journey Map & Workflow Diagram</span>
+            </div>
+          </div>
+          <span class="cs-img-caption">Current-state journey map showing handoffs and decision gaps</span>
+        </div>
+        <p>From the research I defined three design principles:</p>
+        <div class="cs-highlight-grid">
+          <div class="cs-highlight-item">
+            <h5>Signal over noise</h5>
+            <p>Surface what matters most, first. Let users drill down by choice, not necessity.</p>
+          </div>
+          <div class="cs-highlight-item">
+            <h5>Earned trust in AI</h5>
+            <p>Show AI confidence transparently without making it feel like a technical burden.</p>
+          </div>
+          <div class="cs-highlight-item">
+            <h5>Act without leaving</h5>
+            <p>Every review action should be completable within the dashboard itself.</p>
+          </div>
+          <div class="cs-highlight-item">
+            <h5>Patterns over point-in-time</h5>
+            <p>Make it easy to see trends across assets, not just snapshots of individual results.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DESIGN PROCESS -->
+    <div class="cs-grid reveal">
+      <div class="cs-sidebar-label">Design Process</div>
+      <div class="cs-content">
+        <h3>Design Process</h3>
+        <p>I started with low-fidelity wireframes focused purely on information hierarchy. The first question was: what does the manager need to see in the first 10 seconds of opening the dashboard?</p>
+        <div class="cs-img-block">
+          <div class="img-placeholder img-placeholder--alt">
+            <div class="placeholder-inner">
+              <span class="placeholder-icon">◧</span>
+              <span class="placeholder-text">Wireframe Explorations — Early Concepts</span>
+            </div>
+          </div>
+          <span class="cs-img-caption">Early wireframe iterations exploring different layout approaches</span>
+        </div>
+        <p>After three rounds of user testing with lo-fi prototypes, I moved to high-fidelity designs in Figma. The primary challenge in the visual design phase was communicating AI confidence without triggering anxiety or false certainty — a nuance I addressed through careful use of color, iconography, and language.</p>
+        <div class="cs-two-col">
+          <div class="cs-img-block">
+            <div class="img-placeholder">
+              <div class="placeholder-inner">
+                <span class="placeholder-icon">◩</span>
+                <span class="placeholder-text">Hi-Fi Mockup v1</span>
+              </div>
+            </div>
+            <span class="cs-img-caption">First high-fidelity iteration</span>
+          </div>
+          <div class="cs-img-block">
+            <div class="img-placeholder img-placeholder--dark">
+              <div class="placeholder-inner">
+                <span class="placeholder-icon">◪</span>
+                <span class="placeholder-text">Hi-Fi Mockup v2</span>
+              </div>
+            </div>
+            <span class="cs-img-caption">Refined design after user testing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- KEY DECISIONS -->
+    <div class="cs-grid reveal">
+      <div class="cs-sidebar-label">Key Decisions</div>
+      <div class="cs-content">
+        <h3>Key Design Decisions</h3>
+        <p>Several design decisions defined the character of the final product:</p>
+        <div class="cs-highlight-grid">
+          <div class="cs-highlight-item">
+            <h5>Severity-based card layout</h5>
+            <p>Inspection results are ranked by a composite severity score, placing items requiring human attention at the top — always.</p>
+          </div>
+          <div class="cs-highlight-item">
+            <h5>Confidence indicator language</h5>
+            <p>Instead of raw percentages, confidence is communicated as "High / Medium / Needs Review" — reducing cognitive load without hiding the signal.</p>
+          </div>
+          <div class="cs-highlight-item">
+            <h5>Inline review workflow</h5>
+            <p>Managers can approve, flag, or escalate any inspection result directly from the card — without navigating to a separate screen.</p>
+          </div>
+          <div class="cs-highlight-item">
+            <h5>Cross-site anomaly heatmap</h5>
+            <p>A persistent heatmap at the top of the dashboard surfaces systemic issues across multiple assets at a glance.</p>
+          </div>
+        </div>
+        <div class="cs-img-block" style="margin-top:32px">
+          <div class="img-placeholder img-placeholder--alt">
+            <div class="placeholder-inner">
+              <span class="placeholder-icon">⬡</span>
+              <span class="placeholder-text">Final Design — Anomaly Heatmap Component</span>
+            </div>
+          </div>
+          <span class="cs-img-caption">The cross-site anomaly heatmap — a critical feature for systemic pattern detection</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- FINAL SOLUTION -->
+    <div class="cs-grid reveal">
+      <div class="cs-sidebar-label">Solution</div>
+      <div class="cs-content">
+        <h3>Final Solution</h3>
+        <p>The final dashboard centers on three interconnected views: a real-time triage queue prioritized by severity, a cross-asset anomaly overview, and a detailed inspection record with inline review actions.</p>
+        <p>The design language is deliberately restrained — high information density is balanced with whitespace and typographic hierarchy that guides the eye through the data in a natural sequence.</p>
+        <div class="cs-img-block">
+          <div class="img-placeholder">
+            <div class="placeholder-inner">
+              <span class="placeholder-icon">⬡</span>
+              <span class="placeholder-text">Final Design — Full Dashboard View</span>
+            </div>
+          </div>
+          <span class="cs-img-caption">Final dashboard design with triage queue, heatmap, and status summary</span>
+        </div>
+        <div class="cs-two-col">
+          <div class="cs-img-block">
+            <div class="img-placeholder img-placeholder--dark">
+              <div class="placeholder-inner">
+                <span class="placeholder-icon">◈</span>
+                <span class="placeholder-text">Detail Panel</span>
+              </div>
+            </div>
+            <span class="cs-img-caption">Inspection detail with inline review actions</span>
+          </div>
+          <div class="cs-img-block">
+            <div class="img-placeholder img-placeholder--alt">
+              <div class="placeholder-inner">
+                <span class="placeholder-icon">◉</span>
+                <span class="placeholder-text">Mobile View</span>
+              </div>
+            </div>
+            <span class="cs-img-caption">Responsive mobile layout for field use</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- IMPACT -->
+  <div class="cs-impact">
+    <div class="cs-impact-inner">
+      <span class="mono section-label">Impact</span>
+      <h2>Measurable outcomes<br>from a clearer interface.</h2>
+      <div class="impact-stats">
+        <div>
+          <span class="impact-stat-num">67%</span>
+          <span class="impact-stat-label">Reduction in time-to-review for flagged inspections</span>
+        </div>
+        <div>
+          <span class="impact-stat-num">4→1</span>
+          <span class="impact-stat-label">Tools consolidated into a single dashboard workflow</span>
+        </div>
+        <div>
+          <span class="impact-stat-num">91%</span>
+          <span class="impact-stat-label">Manager satisfaction score in post-launch survey</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CS NAV FOOTER -->
+  <div class="cs-nav-footer">
+    <a href="index.html" class="cs-nav-link">
+      <span>← All Work</span>
+      <h4>Back to Portfolio</h4>
+    </a>
+    <a href="case-study-2.html" class="cs-nav-link next">
+      <span>Next Case Study →</span>
+      <h4>AI Quote Generation Platform</h4>
+    </a>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">Abdul Kaleem</span>
+      <span class="mono footer-tagline">Principal UX Designer</span>
+      <div class="footer-links">
+        <a href="index.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

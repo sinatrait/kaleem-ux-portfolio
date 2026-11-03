@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — Abdul Kaleem</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">AK</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <button class="nav-menu-btn" aria-label="Toggle menu"><span></span><span></span></button>
+  </nav>
+
+  <div class="contact-hero">
+    <div class="contact-left reveal">
+      <span class="mono section-label">Contact</span>
+      <h1>
+        Let's design something<br>
+        <em>worth using.</em>
+      </h1>
+      <p>I'm available for senior UX roles, design leadership positions, and select consulting engagements in enterprise software, AI/ML interfaces, and operational platforms.</p>
+
+      <div class="contact-channels">
+        <div class="contact-channel">
+          <label>Email</label>
+          <a href="mailto:hello@abdulkaleem.design">hello@abdulkaleem.design</a>
+        </div>
+        <div class="contact-channel">
+          <label>LinkedIn</label>
+          <a href="#" target="_blank">linkedin.com/in/abdulkaleem</a>
+        </div>
+        <div class="contact-channel">
+          <label>Dribbble</label>
+          <a href="#" target="_blank">dribbble.com/abdulkaleem</a>
+        </div>
+        <div class="contact-channel">
+          <label>Location</label>
+          <a>Available Remotely / Relocatable</a>
+        </div>
+      </div>
+
+      <div style="margin-top:48px;padding:32px;background:var(--gray-100);border:1px solid var(--gray-200);">
+        <span class="mono" style="color:var(--gray-600);display:block;margin-bottom:12px;">Current Availability</span>
+        <p style="font-family:var(--font-serif);font-size:22px;font-weight:300;line-height:1.3;margin:0;">
+          Open to new opportunities.<br>
+          <em style="color:var(--gray-600);">Typically respond within 48 hours.</em>
+        </p>
+      </div>
+    </div>
+
+    <div class="contact-form-wrap reveal" data-delay="150">
+      <h3>Send a message</h3>
+
+      <form id="contactForm">
+        <div class="form-field">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" placeholder="First and last name" required />
+        </div>
+        <div class="form-field">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="your@company.com" required />
+        </div>
+        <div class="form-field">
+          <label for="company">Company / Organization</label>
+          <input type="text" id="company" placeholder="Where you work" />
+        </div>
+        <div class="form-field">
+          <label for="type">Engagement Type</label>
+          <select id="type">
+            <option value="" disabled selected>Select one</option>
+            <option>Full-time role</option>
+            <option>Contract / consulting</option>
+            <option>Design leadership</option>
+            <option>Speaking / advisory</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Tell me about the project, role, or opportunity..." required></textarea>
+        </div>
+        <button type="submit" class="form-submit">Send Message</button>
+        <p class="form-note">No spam. Your information is kept private.</p>
+      </form>
+
+      <div id="formSuccess" class="form-success">
+        <h4>Message received.</h4>
+        <p>Thank you for reaching out. I'll be in touch within 48 hours.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">Abdul Kaleem</span>
+      <span class="mono footer-tagline">Principal UX Designer</span>
+      <div class="footer-links">
+        <a href="index.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
